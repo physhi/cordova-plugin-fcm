@@ -67,8 +67,9 @@
 				</feature>
 		</config-file>
 
-    <framework src="com.google.firebase:firebase-core:11.4.2" />
-    <framework src="com.google.firebase:firebase-messaging:11.4.2" />
+        <!-- match these versions with googleplus auth plugin -->
+    <framework src="com.google.firebase:firebase-core:11.0.+" />
+    <framework src="com.google.firebase:firebase-messaging:11.0.+" />
 
 		<framework src="src/android/FCMPlugin.gradle" custom="true" type="gradleReference"/>
 

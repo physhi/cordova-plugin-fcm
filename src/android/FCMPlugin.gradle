@@ -16,6 +16,15 @@ buildscript {
 }
 // apply plugin: 'com.google.gms.google-services'
 // class must be used instead of id(string) to be able to apply plugin from non-root gradle file
+repositories {
+            jcenter()
+			mavenLocal()
+        }
+dependencies {
+    // match the versions with plugin.xml and cordova-plugin-googleplus
+	compile 'com.google.firebase:firebase-core:11.0.+'
+	compile 'com.google.firebase:firebase-messaging:11.0.+'
+}
 ext.postBuildExtras = {
     apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
 }
